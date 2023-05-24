@@ -14,7 +14,7 @@ import EditContact, {
   action as editAction,
 } from "./routes/edit";
 import { action as destroyAction } from "./routes/destroy";
-
+import Index from "./routes/index";
 
 const router = createBrowserRouter([
   {
@@ -40,6 +40,7 @@ const router = createBrowserRouter([
         action: destroyAction,
         errorElement: <div>Oops! There was an error.</div>,
       },
+      { index: true, element: <Index /> },
     ],
   },
 ]);
