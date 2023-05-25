@@ -90,7 +90,6 @@ function Favorite({ contact }) {
   }
   return (
     <fetcher.Form method="post">
-    <Form method="post">
       <button
         name="favorite"
         value={favorite ? "false" : "true"}
@@ -102,7 +101,6 @@ function Favorite({ contact }) {
       >
         {favorite ? "★" : "☆"}
       </button>
-    </Form>
     </fetcher.Form>
   );
 }
